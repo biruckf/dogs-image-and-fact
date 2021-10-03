@@ -1,0 +1,5 @@
+package com.codeTest.dogsImageAndFact.service;
+
+public class DogsServiceImpl implements DogsService {
+
+}

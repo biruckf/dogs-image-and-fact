@@ -1,0 +1,33 @@
+package com.codeTest.dogsImageAndFact.model;
+
+import java.util.List;
+
+public class DogsFact {
+
+	private List<String> fact;
+	
+	
+
+	public DogsFact() {
+		
+	}
+
+	public DogsFact(List<String> fact) {
+		this.fact = fact;
+	}
+
+	public List<String> getFact() {
+		return fact;
+	}
+
+	public void setFact(List<String> fact) {
+		this.fact = fact;
+	}
+
+	@Override
+	public String toString() {
+		return "DogsFact [fact=" + fact + "]";
+	}
+	
+	
+}

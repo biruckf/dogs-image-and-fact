@@ -1,0 +1,8 @@
+package com.codeTest.dogsImageAndFact.model;
+
+public class DogsFact {
+
+	private String fact;
+	
+	
+}

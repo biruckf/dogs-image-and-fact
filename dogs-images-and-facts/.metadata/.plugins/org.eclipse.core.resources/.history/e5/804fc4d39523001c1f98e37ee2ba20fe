@@ -1,0 +1,8 @@
+package com.codeTest.dogsImageAndFact.service;
+
+import com.codeTest.dogsImageAndFact.dogsUtil.ModelMapperUtil;
+
+public interface DogsService {
+
+	public ModelMapperUtil getListOfDogsImagesAndFacts(int number);
+}

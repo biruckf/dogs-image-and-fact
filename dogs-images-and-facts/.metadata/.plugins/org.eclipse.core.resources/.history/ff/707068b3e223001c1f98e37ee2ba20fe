@@ -1,0 +1,62 @@
+//package com.codeTest.dogsImageAndFact.dogsUtil;
+//
+//import java.util.List;
+//import java.util.stream.Collectors;
+//
+//import org.modelmapper.ModelMapper;
+//
+//import com.codeTest.dogsImageAndFact.model.DogsFact;
+//
+//
+//
+//public class ModelMapperUtil {
+//	
+//	private static ModelMapper modelMapper = new ModelMapper();
+//
+//	List<DogsFact> dogsFact;
+//	
+//	
+//	
+//	
+//	public ModelMapperUtil() {
+//		
+//	}
+//
+//
+//
+//	public ModelMapperUtil(List<DogsFact> dogsFact) {
+//		this.dogsFact = dogsFact;
+//	}
+//
+//	
+//
+//	public List<DogsFact> getDogsFact() {
+//		return dogsFact;
+//	}
+//
+//
+//
+//	public void setDogsFact(List<DogsFact> dogsFact) {
+//		this.dogsFact = dogsFact;
+//	}
+//
+//
+//
+//	<S, T> List<T> mapList(List<S> source, Class<T> targetClass) {
+//		
+//	    return source
+//	      .stream()
+//	      .map(element -> modelMapper.map(element, targetClass))
+//	      .collect(Collectors.toList());
+//	}
+//
+//
+////	public static List<DogsFact> mapList(Mono<String> res, Class<DogsFact> facts) {
+////		return res
+////			      .stream()
+////			      .map(element -> modelMapper.map(element, targetClass))
+////			      .collect(Collectors.toList());
+////	}
+////	
+//	
+//}

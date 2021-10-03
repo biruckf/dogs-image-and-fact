@@ -1,0 +1,11 @@
+package com.codeTest.dogsImageAndFact.service;
+
+import org.springframework.stereotype.Service;
+
+import com.codeTest.dogsImageAndFact.dogsUtil.ModelMapperUtil;
+
+@Service
+public interface DogsService {
+
+	public void getListOfDogsImagesAndFacts(int number);
+}

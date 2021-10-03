@@ -1,0 +1,31 @@
+package com.codeTest.dogsImageAndFact.dogsUtil;
+
+import java.util.List;
+
+import com.codeTest.dogsImageAndFact.model.DogsFactAndImage;
+
+public class ModelMapper {
+
+	private List<DogsFactAndImage> listOfDogs;
+
+	public ModelMapper(List<DogsFactAndImage> listOfDogs) {
+		this.listOfDogs = listOfDogs;
+	}
+
+	public List<DogsFactAndImage> getListOfDogs() {
+		return listOfDogs;
+	}
+
+	public void setListOfDogs(List<DogsFactAndImage> listOfDogs) {
+		this.listOfDogs = listOfDogs;
+	}
+	
+	<S, T> List<T> mapList(List<S> source, Class<T> targetClass) {
+	    return source
+	      .stream()
+	      .map(element -> modelMapper.map(element, targetClass))
+	      .collect(Collectors.toList());
+	}
+	
+	
+}

@@ -1,0 +1,33 @@
+package com.codeTest.dogsImageAndFact.model;
+
+public class DogsFactAndImage {
+	
+	private String fact;
+	private String image;
+	
+	
+	
+	public DogsFactAndImage() {
+		
+	}
+	public DogsFactAndImage(String fact, String image) {
+		super();
+		this.fact = fact;
+		this.image = image;
+	}
+	public String getFact() {
+		return fact;
+	}
+	public void setFact(String fact) {
+		this.fact = fact;
+	}
+	public String getImage() {
+		return image;
+	}
+	public void setImage(String image) {
+		this.image = image;
+	}
+	
+	
+
+}

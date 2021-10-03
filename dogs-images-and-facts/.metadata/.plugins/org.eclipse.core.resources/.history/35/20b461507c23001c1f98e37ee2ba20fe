@@ -1,0 +1,6 @@
+package com.codeTest.dogsImageAndFact.dogsUtil;
+
+public class ModelMapper {
+
+	private List<DogsFactAndImage> listOfDogs;
+}

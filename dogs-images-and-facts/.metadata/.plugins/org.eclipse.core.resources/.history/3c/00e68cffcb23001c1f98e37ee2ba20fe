@@ -1,0 +1,15 @@
+package com.codeTest.dogsImageAndFact.service;
+
+import org.springframework.stereotype.Service;
+
+import com.codeTest.dogsImageAndFact.dogsUtil.ModelMapperUtil;
+import com.codeTest.dogsImageAndFact.model.DogsFact;
+import com.codeTest.dogsImageAndFact.model.ListOfDogsFact;
+
+import reactor.core.publisher.Mono;
+
+@Service
+public interface DogsService {
+
+	public Mono<ListOfDogsFact> getListOfDogsImagesAndFacts(int number);
+}

@@ -1,0 +1,12 @@
+package com.codeTest.dogsImageAndFact.advise;
+
+import org.springframework.web.bind.annotation.ControllerAdvice;
+
+@ControllerAdvice
+public class DogExceptionAdvice {
+
+	@ExceptionHnadler(NotFoundException.class)
+	public ResponceEntity<String> handleResourseNotFoundException(){
+		
+	}
+}

@@ -1,0 +1,11 @@
+package com.codeTest.dogsImageAndFact.model;
+
+public class DogsImage {
+
+	private String message;
+	private String status;
+	
+	
+	
+	
+}

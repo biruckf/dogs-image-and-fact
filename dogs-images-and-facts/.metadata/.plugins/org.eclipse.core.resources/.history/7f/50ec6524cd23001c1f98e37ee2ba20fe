@@ -1,0 +1,57 @@
+package com.codeTest.dogsImageAndFact.service;
+
+import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.client.reactive.ClientHttpRequest;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import com.codeTest.dogsImageAndFact.dogsUtil.ModelMapperUtil;
+import com.codeTest.dogsImageAndFact.model.DogsFact;
+import com.codeTest.dogsImageAndFact.model.ListOfDogsFact;
+
+
+@Service
+public class DogsServiceImpl implements DogsService {
+
+	
+//	private final WebClient webClient;
+	
+	
+
+//	public DogsServiceImpl(WebClient.Builder webClientBuilder) {
+//		this.webClient = webClientBuilder.baseUrl("https://dog-facts-api.herokuapp.com/api/v1/resources/").build();
+//	}
+	
+//	public ListOfDogsFact getDogsFact(int number) {
+////		return this.webClient.get().uri("/dogs?number="+ number)
+////						.retrieve().bodyToMono(ListOfDogsFact.class);
+////		return restTemplate.getForObject("https://dog-facts-api.herokuapp.com/api/v1/resources/dogs?number="+number, ListOfDogsFact.class);
+//	}
+	
+	
+	@Override
+	public ListOfDogsFact  getListOfDogsImagesAndFacts(int number) {
+		
+//		List<DogsFact> df= new ArrayList();
+//		df.add(new DogsFact("Test1"));
+//		df.add(new DogsFact("Test2"));
+//		df.add(new DogsFact("Test3"));
+//		
+//		ListOfDogsFact lDf= new ListOfDogsFact(df);
+		
+		//ListOfDogsFact res=getDogsFact(10);
+		
+		//System.out.println(res);
+		return null;
+	}
+	
+
+}
