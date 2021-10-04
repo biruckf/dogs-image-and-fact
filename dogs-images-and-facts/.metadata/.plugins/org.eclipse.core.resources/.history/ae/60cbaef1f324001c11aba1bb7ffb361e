@@ -1,0 +1,5 @@
+package com.codeTest.dogsImageAndFact.dto;
+
+public class ErrorCode {
+
+}

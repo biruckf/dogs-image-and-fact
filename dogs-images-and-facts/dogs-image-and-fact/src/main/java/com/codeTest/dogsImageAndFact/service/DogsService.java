@@ -2,7 +2,7 @@ package com.codeTest.dogsImageAndFact.service;
 
 import org.springframework.stereotype.Service;
 
-import com.codeTest.dogsImageAndFact.model.DogsFactAndImage;
+import com.codeTest.dogsImageAndFact.dto.DogsFactAndImage;
 
 
 /**

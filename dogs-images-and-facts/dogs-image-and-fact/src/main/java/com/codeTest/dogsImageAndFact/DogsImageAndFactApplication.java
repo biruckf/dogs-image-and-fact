@@ -3,7 +3,7 @@ package com.codeTest.dogsImageAndFact;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.web.client.RestTemplate;
+import org.springframework.web.reactive.function.client.WebClient;
 
 /**
  * @author biruckfeysa
@@ -18,14 +18,15 @@ public class DogsImageAndFactApplication {
 	
 	
 	/**
-	 * This method is created to create a bean of RestTemplate
+	 * This method is created to create a bean of WebClient.Builder
 	 * 
-	 * @return RestTemplate
+	 * @return WebClient.Builder
 	 *
 	 */
+	
 	@Bean
-	public RestTemplate restTemplate() {
-	    return new RestTemplate();
+	public WebClient.Builder getWebClientBuilder(){
+		return WebClient.builder();
 	}
 
 }

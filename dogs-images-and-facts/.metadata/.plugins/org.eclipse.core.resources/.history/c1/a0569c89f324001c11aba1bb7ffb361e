@@ -1,0 +1,8 @@
+package com.codeTest.dogsImageAndFact.dto;
+
+public class Response {
+
+	 private String message;
+	 private HttpStatus status;
+	 private ErrorCode errorCode;
+}

@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.codeTest.dogsImageAndFact.model.DogsFactAndImage;
+import com.codeTest.dogsImageAndFact.dto.DogsFactAndImage;
 import com.codeTest.dogsImageAndFact.service.DogsService;
 
 

@@ -1,0 +1,19 @@
+package com.codeTest.dogsImageAndFact.dto;
+
+public class ErrorCode {
+	private String numberCode;
+	private String textCode;
+	
+	
+	public ErrorCode() {
+		
+	}
+
+
+	public ErrorCode(String numberCode, String textCode) {
+		this.numberCode = numberCode;
+		this.textCode = textCode;
+	}
+	
+	
+}
