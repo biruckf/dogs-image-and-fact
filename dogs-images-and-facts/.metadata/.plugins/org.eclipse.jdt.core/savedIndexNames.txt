@@ -3,8 +3,8 @@ INDEX VERSION 1.131+/Users/biruckfeysa/Documents/GitHub/dogs-image-and-fact/dogs
 1469390213.index
 692597891.index
 2513357563.index
-2346632748.index
 1469288820.index
+2346632748.index
 398659802.index
 191899953.index
 922868824.index
@@ -25,8 +25,8 @@ INDEX VERSION 1.131+/Users/biruckfeysa/Documents/GitHub/dogs-image-and-fact/dogs
 1577418546.index
 2501727591.index
 510071061.index
-3237445359.index
 647065519.index
+3237445359.index
 292266945.index
 2532433812.index
 3990116037.index
@@ -43,13 +43,13 @@ INDEX VERSION 1.131+/Users/biruckfeysa/Documents/GitHub/dogs-image-and-fact/dogs
 2711098790.index
 1820749328.index
 3420000559.index
-240837233.index
+139623518.index
 3880619029.index
 3591065305.index
 60898931.index
 3090894699.index
 1060361648.index
-139623518.index
+240837233.index
 3275736551.index
 2552981211.index
 200236973.index

@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import com.codeTest.dogsImageAndFact.advise.RestTemplateErrorHandler;
-import com.codeTest.dogsImageAndFact.model.DogsFact;
+import com.codeTest.dogsImageAndFact.model.DogsFactAndImage;
 import com.codeTest.dogsImageAndFact.model.DogsImage;
 
 /**
@@ -24,22 +24,23 @@ public class DogsServiceImpl implements DogsService {
 	}
 
 	/**
-	 * @param number of dogs
-	 * @return Array of dogs fact
+	 * This method will trigger request for rest apis to get dogs fact and image
+	 * and pass those values to populate images in to dogs facts class
 	 * 
-	 *  This method will trigger request for rest apis to get dogs fact and image 
-	 *  and pass those values to populate images in to dogs facts class
+	 * @param number of dogs
+	 * @return DogsFactAndImage[] Array of DogsFactAndImage object
+	 * 
 	 * 
 	 */
 	@Override
-	public DogsFact[] getListOfDogsImagesAndFacts(int number) {
+	public DogsFactAndImage[] getListOfDogsImagesAndFacts(int number) {
 
 		return this.populateImages(this.getDogsFact(number), this.getDogsImage(number));
 	}
 
-	private DogsFact[] getDogsFact(int num) {
+	private DogsFactAndImage[] getDogsFact(int num) {
 		return restTemplate.getForObject("https://dog-facts-api.herokuapp.com/api/v1/resources/dogs?number=" + num,
-				DogsFact[].class);
+				DogsFactAndImage[].class);
 	}
 
 	private DogsImage getDogsImage(int num) {
@@ -48,23 +49,21 @@ public class DogsServiceImpl implements DogsService {
 
 	
 	/**
-	 * This method will populate images retrieved from dogs image api to the 
-	 * objects of dogsFacts
-	 * 
-	 * @param dogsFact
-	 * @param dogsImage
-	 * @return DogsFact[]
+	 * This method will populate dogsImage  to the objects of DogsFactAndImage
 	 * 
 	 * 
+	 * @param dogsFactAndImage[] an array of dogsFactAndImage
+	 * @param dogsImage an object of dogsImage
+	 * @return DogsFactAndImage[] an array of dogsFactAndImage
 	 */
-	private DogsFact[] populateImages(DogsFact[] dogsFact, DogsImage dogsImage) {
-		int size = dogsFact.length <= dogsImage.getMessage().length ? dogsFact.length : dogsImage.getMessage().length;
+	private DogsFactAndImage[] populateImages(DogsFactAndImage[] dogsFactAndImage, DogsImage dogsImage) {
+		int size = dogsFactAndImage.length <= dogsImage.getMessage().length ? dogsFactAndImage.length : dogsImage.getMessage().length;
 
 		for (int i = 0; i < size; i++) {
-			dogsFact[i].setImage(dogsImage.getMessage()[i]);
+			dogsFactAndImage[i].setImage(dogsImage.getMessage()[i]);
 		}
 
-		return dogsFact;
+		return dogsFactAndImage;
 	}
 
 }

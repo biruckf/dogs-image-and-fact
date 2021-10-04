@@ -3,7 +3,7 @@ package com.codeTest.dogsImageAndFact.model;
 /**
  * @author biruckfeysa
  * 
- * DogsImage class created to map dogs image objects coming from 
+ * DogsImage class created to map dogs image objects coming from an api
  * 
  *	https://dog.ceo/dog-api/
  */
