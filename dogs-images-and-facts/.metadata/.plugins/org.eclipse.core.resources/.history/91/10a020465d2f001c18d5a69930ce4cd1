@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  build: ./dogs-image-and-fact
+  container_name: dogs-image-and-fact
+  ports: 
+      - 8083:8083
+  

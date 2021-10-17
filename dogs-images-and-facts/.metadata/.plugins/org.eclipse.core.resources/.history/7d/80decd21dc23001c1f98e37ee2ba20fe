@@ -1,6 +1,0 @@
-package com.codeTest.dogsImageAndFact.dogsUtil;
-
-@Component
-public class RestTemplateErrorHandler {
-
-}
